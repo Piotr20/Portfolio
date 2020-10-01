@@ -1,6 +1,5 @@
-body {
-     background: #d9e4ea;
-}
+@import "../sass/colours.scss";
+
 
 span {
      display: block;
@@ -13,7 +12,7 @@ span {
      height: 100px;
      background-color: transparent;
      position: relative;
-     position: relative;
+     z-index: 10;
      cursor: pointer;
      border-radius: 5px;
 
@@ -55,10 +54,11 @@ span {
 
           span {
                transition: .25s ease-in-out;
+               background-color: $red;
 
                &:nth-child(1) {
                     height: 0%;
-                    width: 4px;
+                    width: 7px;
                     position: absolute;
                     top: 10%;
                     left: 48px;
@@ -67,7 +67,7 @@ span {
 
                &:nth-child(2) {
                     width: 0%;
-                    height: 4px;
+                    height: 7px;
                     position: absolute;
                     left: 10%;
                     top: 48px;
