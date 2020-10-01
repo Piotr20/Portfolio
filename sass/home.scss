@@ -152,6 +152,8 @@ header {
 .first {
      width: 100%;
      margin-top: 8vh;
+     display: flex;
+     flex-direction: column;
 
      img {
           width: 100%;
@@ -177,6 +179,37 @@ header {
      #intro_container {
           img {
                height: 20%;
+          }
+     }
+
+     .first {
+          flex-direction: row-reverse;
+          height: 202vh;
+
+          img {
+               width: 50%;
+          }
+
+          .text-wrap {
+               width: 50%;
+
+               h1,
+               h2 {
+                    text-align: left;
+                    padding-left: 30%;
+                    font-size: 100px;
+                    font-weight: 500;
+                    padding-top: 150px;
+                    animation: first_text_in .4s ease forwards;
+                    animation-delay: 6.5s;
+                    opacity: 0;
+               }
+
+               h2 {
+                    width: 60%;
+                    padding-top: 0;
+                    animation-delay: 6.6s;
+               }
           }
      }
 }

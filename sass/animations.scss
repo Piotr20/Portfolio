@@ -21,7 +21,7 @@
           width: 85%;
      }
 
-     23% {
+     22.5% {
           height: 100vh;
           width: 85%;
      }
@@ -72,5 +72,17 @@
      100% {
           transform: translateY(-10%);
           opacity: 0;
+     }
+}
+
+@keyframes first_text_in {
+     from {
+          transform: translateY(10%);
+          opacity: 0;
+     }
+
+     to {
+          transform: translateY(0);
+          opacity: 1;
      }
 }
