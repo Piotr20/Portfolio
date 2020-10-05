@@ -158,11 +158,94 @@ footer {
      }
 
      .media_container {
-          width: 200px;
-          height: 80px;
-          background-color: red;
           align-self: center;
           margin-top: 15vh;
+          display: flex;
+          justify-content: space-around;
+          list-style: none;
+          align-items: center;
+
+          li {
+               text-decoration: none;
+               margin: 0 20px;
+               position: relative;
+               height: 60px;
+               width: 60px;
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               border: 2px solid #4267B2;
+               border-radius: 15px;
+               overflow: hidden;
+
+               span {
+                    width: 100%;
+                    height: 100%;
+                    background-color: #4267B2;
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    transition: .3s ease-in-out;
+               }
+
+               &:hover span {
+                    height: 100%;
+               }
+
+               .fab {
+                    font-size: 8vw;
+                    color: #4267B2;
+                    z-index: 2;
+                    color: $black;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -40%);
+                    transition: .3s .3s ease-in-out;
+               }
+
+               &:hover .fab {
+                    color: $black;
+                    transform: translate(-50%, -50%);
+               }
+
+          }
+
+          li:nth-of-type(2) {
+               border-color: #2867B2;
+
+               span {
+                    background-color: #2867B2;
+               }
+
+               .fab {
+                    color: $black;
+               }
+
+               &:hover .fab {
+                    color: $black;
+                    transform: translate(-50%, -50%);
+               }
+          }
+
+          li:nth-of-type(3) {
+               border-color: #833ab4;
+
+               span {
+                    background-color: #833ab4;
+               }
+
+               .fab {
+                    color: $black;
+                    transition: .3s .3s ease-in-out;
+               }
+
+               &:hover .fab {
+                    color: $black;
+                    transform: translate(-50%, -50%);
+               }
+          }
      }
 }
 
@@ -223,11 +306,77 @@ footer {
           }
 
           .media_container {
+               align-self: center;
+               margin-top: 15vh;
+               display: flex;
+               justify-content: space-around;
+               list-style: none;
+               align-items: center;
                margin: 0;
                margin-right: 80px;
-               width: 400px;
-               height: 120px;
+
+               li {
+                    text-decoration: none;
+                    margin: 0 40px;
+                    height: 100px;
+                    width: 100px;
+                    border-width: 4px;
+
+                    .fab {
+                         font-size: 2.8vw;
+                         color: #2867B2;
+                    }
+
+                    span {
+                         height: 0;
+                    }
+               }
+
+               li:nth-of-type(2) {
+                    border-color: #2867B2;
+
+                    span {
+                         background-color: #2867B2;
+                    }
+               }
+
+               li:nth-of-type(2) {
+                    border-color: #2867B2;
+
+                    span {
+                         background-color: #2867B2;
+                    }
+
+                    .fab {
+                         color: #2867B2;
+                    }
+
+                    &:hover .fab {
+                         color: $black;
+                         transform: translate(-50%, -50%);
+                    }
+               }
+
+               li:nth-of-type(3) {
+                    border-color: #833ab4;
+
+                    span {
+                         background-color: #833ab4;
+                    }
+
+                    .fab {
+                         color: #833ab4;
+                         transition: .3s .3s ease-in-out;
+                    }
+
+                    &:hover .fab {
+                         color: $black;
+                         transform: translate(-50%, -50%);
+                    }
+               }
           }
+
+
      }
 
 }

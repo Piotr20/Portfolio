@@ -170,6 +170,24 @@
   }
 }
 
+@-webkit-keyframes first_img_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes first_img_in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 @-webkit-keyframes projects_anim_logo_in {
   0% {
     -webkit-transform: translateY(10%);
