@@ -840,6 +840,7 @@ body {
   background-position: center center;
   -webkit-transition: background-size .5s ease;
   transition: background-size .5s ease;
+  cursor: pointer;
 }
 
 #projects .work_wrapper div div.img span {

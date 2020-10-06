@@ -11,9 +11,9 @@ var rellax = new Rellax('.rellax', {
 
 
 const newUrl = [
-     "../subpages/project_1.html",
-     "../subpages/project_2.html",
-     "../subpages/project_3.html",
+     "/subpages/project_1.html",
+     "/subpages/project_2.html",
+     "/subpages/project_3.html",
 ];
 
 const projectBoxes = document.querySelectorAll('.work_wrapper > div .img');
@@ -54,7 +54,6 @@ ScrollReveal().reveal('.reveal', {
      reset: true,
      distance: '50px',
      origin: "bottom",
-     mobile: false,
 });
 ScrollReveal().reveal('.headline', {
      delay: 300,
@@ -63,5 +62,4 @@ ScrollReveal().reveal('.headline', {
      scale: .95,
      origin: "bottom",
      distance: '20px',
-     mobile: false,
 });
