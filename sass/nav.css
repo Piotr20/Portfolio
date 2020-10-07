@@ -744,7 +744,7 @@ header #curtain {
           clip-path: ellipse(0% 0% at 100% 0);
 }
 
-header #curtain ul {
+header #curtain > ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -757,14 +757,14 @@ header #curtain ul {
   list-style: none;
 }
 
-header #curtain ul li {
+header #curtain > ul li {
   width: 100%;
   text-align: center;
   height: 20%;
   opacity: 0;
 }
 
-header #curtain ul li a {
+header #curtain > ul li a {
   text-decoration: none;
   color: #E4343E;
   font-family: "Roboto", sans-serif;
@@ -772,11 +772,28 @@ header #curtain ul li a {
   font-weight: 500;
 }
 
-header .media_container {
+header #curtain .media_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   width: 60%;
   height: 100px;
-  background-color: red;
+  width: 200px;
   margin-bottom: -30%;
+}
+
+header #curtain .media_container li {
+  width: 50px;
+}
+
+header #curtain .media_container li i {
+  font-size: 50px;
 }
 
 header #curtain.open {
@@ -802,6 +819,11 @@ header #curtain.open li:nth-of-type(3) {
 header #curtain.open li:nth-of-type(4) {
   -webkit-animation-delay: 1.1s;
           animation-delay: 1.1s;
+}
+
+header #curtain.open .media_container li {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 footer {
@@ -970,13 +992,68 @@ footer .media_container li:nth-of-type(3):hover .fab {
     background-color: #B0AEAE;
     height: 4px;
   }
-  header .media_container {
-    margin-bottom: -7%;
-    width: 25%;
+  header #curtain .media_container {
     -ms-flex-item-align: start;
-        -ms-grid-row-align: start;
-        align-self: start;
+        align-self: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 400px;
+    margin-bottom: -10%;
     margin-left: 5%;
+  }
+  header #curtain .media_container li {
+    width: 100px;
+    height: 100px;
+    border: 4px solid #E4343E;
+    line-height: 100px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  header #curtain .media_container li:hover i {
+    color: #B0AEAE;
+  }
+  header #curtain .media_container li:hover span {
+    height: 100%;
+  }
+  header #curtain .media_container li .fab {
+    font-size: 3.2vw;
+    color: #E4343E;
+    line-height: 100px;
+    -webkit-transition: .3s .3s ease-in-out;
+    transition: .3s .3s ease-in-out;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  header #curtain .media_container li i {
+    font-size: 70px;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: 2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -40%);
+            transform: translate(-50%, -40%);
+  }
+  header #curtain .media_container li:hover i {
+    color: #B0AEAE;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  header #curtain .media_container li span {
+    height: 0;
+    background-color: #E4343E;
+    z-index: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
   }
   header #curtain.open {
     -webkit-clip-path: ellipse(129% 176% at 100% 0);

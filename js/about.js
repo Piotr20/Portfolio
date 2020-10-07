@@ -57,3 +57,5 @@ ScrollReveal({
      reset: true,
      duration: 1000,
 });
+const projects_scrim = document.querySelector('.projects_scrim');
+projects_scrim.classList.add("active");

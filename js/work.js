@@ -63,3 +63,5 @@ ScrollReveal().reveal('.headline', {
      origin: "bottom",
      distance: '20px',
 });
+
+projects_scrim.classList.add("active");
