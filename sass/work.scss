@@ -226,6 +226,130 @@
                          &:after {
                               left: 80px;
                               width: 20%;
+                              bottom: -15px;
+                         }
+                    }
+
+                    div.img {
+                         grid-row: 1/4;
+                         grid-column: 2/3;
+                         height: 95%;
+                         align-self: flex-end;
+                         width: 90%;
+                         justify-self: start;
+                         transition-property: background-size, filter;
+                         filter: blur(3px);
+                         top: 0;
+                         left: 0;
+                         background-size: 200%;
+
+                         &:hover {
+                              background-size: 210%;
+                              filter: blur(0px);
+                         }
+
+
+
+                         span {
+                              font-size: 250px;
+                              right: 3%;
+                              transform: translate(0, 45%);
+
+                         }
+                    }
+
+
+                    p {
+                         padding-left: 80px;
+                         grid-column: 1/2;
+                         width: 85%;
+                         justify-self: left;
+                         margin-top: 5%;
+                         font-size: 24px;
+                         font-weight: 400;
+
+                    }
+               }
+
+               .number_two {
+                    grid-template-columns: 55% 45%;
+
+                    a {
+                         grid-column: 2/3;
+
+                    }
+
+                    h3 {
+                         grid-column: 2/3;
+                    }
+
+                    .img {
+                         grid-column: 1/2;
+                         justify-self: end;
+
+
+
+
+                         span {
+                              left: 3%;
+                              transform: translate(0, 45%);
+                         }
+                    }
+
+                    p {
+                         grid-column: 2/3;
+                    }
+               }
+          }
+     }
+
+     footer {
+          margin-top: 100px;
+     }
+}
+
+@media only screen and (min-width: 16000px) {
+     #projects {
+          h2 {
+               font-size: 60px;
+               padding-left: 80px;
+
+               &:after {
+                    width: 15%;
+                    height: 6px;
+                    left: 80px;
+               }
+          }
+
+          .work_wrapper {
+               div {
+                    grid-template-columns: 45% 55%;
+                    grid-template-rows: 53% 7% 35% 5%;
+                    height: 100vh;
+
+                    a {
+                         grid-row: 4/5;
+                         text-align: left;
+                         padding-left: 80px;
+                         display: block;
+                         width: 220px;
+                         transition: all .3s ease;
+                         padding-top: 50px;
+
+                         &:hover {
+                              color: $red;
+                         }
+                    }
+
+                    h3 {
+                         grid-row: 2/3;
+                         grid-column: 1/2;
+                         padding-left: 80px;
+                         font-size: 50px;
+
+                         &:after {
+                              left: 80px;
+                              width: 20%;
                               bottom: 0;
                          }
                     }

@@ -880,6 +880,135 @@ svg {
   #projects .work_wrapper div h3:after {
     left: 80px;
     width: 20%;
+    bottom: -15px;
+  }
+  #projects .work_wrapper div div.img {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    height: 95%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    width: 90%;
+    -ms-grid-column-align: start;
+        justify-self: start;
+    -webkit-transition-property: background-size, -webkit-filter;
+    transition-property: background-size, -webkit-filter;
+    transition-property: background-size, filter;
+    transition-property: background-size, filter, -webkit-filter;
+    -webkit-filter: blur(3px);
+            filter: blur(3px);
+    top: 0;
+    left: 0;
+    background-size: 200%;
+  }
+  #projects .work_wrapper div div.img:hover {
+    background-size: 210%;
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  #projects .work_wrapper div div.img span {
+    font-size: 250px;
+    right: 3%;
+    -webkit-transform: translate(0, 45%);
+            transform: translate(0, 45%);
+  }
+  #projects .work_wrapper div p {
+    padding-left: 80px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    width: 85%;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    margin-top: 5%;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  #projects .work_wrapper .number_two {
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
+  }
+  #projects .work_wrapper .number_two a {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #projects .work_wrapper .number_two h3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  #projects .work_wrapper .number_two .img {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  #projects .work_wrapper .number_two .img span {
+    left: 3%;
+    -webkit-transform: translate(0, 45%);
+            transform: translate(0, 45%);
+  }
+  #projects .work_wrapper .number_two p {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+  footer {
+    margin-top: 100px;
+  }
+}
+
+@media only screen and (min-width: 16000px) {
+  #projects h2 {
+    font-size: 60px;
+    padding-left: 80px;
+  }
+  #projects h2:after {
+    width: 15%;
+    height: 6px;
+    left: 80px;
+  }
+  #projects .work_wrapper div {
+    -ms-grid-columns: 45% 55%;
+        grid-template-columns: 45% 55%;
+    -ms-grid-rows: 53% 7% 35% 5%;
+        grid-template-rows: 53% 7% 35% 5%;
+    height: 100vh;
+  }
+  #projects .work_wrapper div a {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    text-align: left;
+    padding-left: 80px;
+    display: block;
+    width: 220px;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    padding-top: 50px;
+  }
+  #projects .work_wrapper div a:hover {
+    color: #E4343E;
+  }
+  #projects .work_wrapper div h3 {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    padding-left: 80px;
+    font-size: 50px;
+  }
+  #projects .work_wrapper div h3:after {
+    left: 80px;
+    width: 20%;
     bottom: 0;
   }
   #projects .work_wrapper div div.img {
