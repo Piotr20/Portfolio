@@ -831,7 +831,6 @@ body {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: red;
   position: relative;
   background-image: url(../images/Work_photos/Project_1.jpg);
   background-size: cover;
@@ -1185,7 +1184,7 @@ body {
         grid-template-columns: 45% 55%;
     -ms-grid-rows: 15% 30% 55%;
         grid-template-rows: 15% 30% 55%;
-    margin-top: 8vh;
+    margin-top: 15vh;
     height: 100vh;
     overflow: hidden;
   }
@@ -1442,7 +1441,7 @@ body {
         grid-template-columns: 45% 55%;
     -ms-grid-rows: 15% 30% 55%;
         grid-template-rows: 15% 30% 55%;
-    margin-top: 8vh;
+    margin-top: 15vh;
     height: 100vh;
     overflow: hidden;
   }

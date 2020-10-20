@@ -45,23 +45,5 @@ projectBoxes[2].addEventListener('click', () => {
      }, 1700);
 })
 
-ScrollReveal({
-     reset: true
-});
-ScrollReveal().reveal('.reveal', {
-     delay: 600,
-     duration: 500,
-     reset: true,
-     distance: '50px',
-     origin: "bottom",
-});
-ScrollReveal().reveal('.headline', {
-     delay: 300,
-     duration: 500,
-     reset: true,
-     scale: .95,
-     origin: "bottom",
-     distance: '20px',
-});
 
 projects_scrim.classList.add("active");

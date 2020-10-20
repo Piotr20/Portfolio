@@ -728,7 +728,6 @@ svg {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background-color: red;
   position: relative;
   background-image: url(../images/Work_photos/Project_1.jpg);
   background-size: cover;
