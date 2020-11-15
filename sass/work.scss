@@ -237,15 +237,9 @@
                          width: 90%;
                          justify-self: start;
                          transition-property: background-size, filter;
-                         filter: blur(3px);
                          top: 0;
                          left: 0;
                          background-size: 200%;
-
-                         &:hover {
-                              background-size: 210%;
-                              filter: blur(0px);
-                         }
 
 
 
@@ -285,10 +279,7 @@
                     .img {
                          grid-column: 1/2;
                          justify-self: end;
-
-
-
-
+                    
                          span {
                               left: 3%;
                               transform: translate(0, 45%);

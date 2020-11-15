@@ -898,16 +898,9 @@ svg {
     transition-property: background-size, -webkit-filter;
     transition-property: background-size, filter;
     transition-property: background-size, filter, -webkit-filter;
-    -webkit-filter: blur(3px);
-            filter: blur(3px);
     top: 0;
     left: 0;
     background-size: 200%;
-  }
-  #projects .work_wrapper div div.img:hover {
-    background-size: 210%;
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
   }
   #projects .work_wrapper div div.img span {
     font-size: 250px;
